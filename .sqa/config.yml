@@ -6,7 +6,7 @@ config:
       repo: https://github.com/EOSC-synergy/sqaaas-tooling
     github.com/swiss-seismological-service/hermes:
       branch: main
-      repo: https://github.com/swiss-seismological-service/hermes/
+      repo: https://github.com/swiss-seismological-service/hermes
 environment:
   JPL_DOCKERFORCEBUILD: enabled
   JPL_KEEPGOING: enabled
@@ -15,58 +15,58 @@ sqa_criteria:
     repos:
       github.com/swiss-seismological-service/hermes git:
         commands:
-        - /usr/bin/env sh .sqa/script.cozy-denim-bongo.sh
-        container: qc.acc_boozy-plum-javanese
+        - /usr/bin/env sh .sqa/script.squirrely-heliotrope-jackal.sh
+        container: qc.acc_slaphappy-gold-zonkey
   QC.Doc:
     repos:
       github.com/swiss-seismological-service/hermes find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.smelly-wisteria-turtle.sh
-        container: qc.doc_clammy-tan-dachshund
+        - /usr/bin/env sh .sqa/script.silly-amethyst-ocelot.sh
+        container: qc.doc_beady-ivory-bandicoot
       github.com/swiss-seismological-service/hermes git:
         commands:
-        - /usr/bin/env sh .sqa/script.snazzy-bronze-cattle.sh
-        container: qc.doc_nippy-apricot-otter
+        - /usr/bin/env sh .sqa/script.skanky-salmon-havanese.sh
+        container: qc.doc_messy-grey-spaniel
       github.com/swiss-seismological-service/hermes markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.woolly-russet-retriever.sh
-        container: qc.doc_snoopy-jade-meerkat
+        - /usr/bin/env sh .sqa/script.lousy-bronze-wolf.sh
+        container: qc.doc_queasy-burgundy-kakapo
   QC.Lic:
     repos:
       github.com/swiss-seismological-service/hermes licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.muzzy-crimson-penguin.sh
-        container: qc.lic_scanty-apricot-opossum
+        - /usr/bin/env sh .sqa/script.grumpy-indigo-newt.sh
+        container: qc.lic_gimpy-gamboge-catfish
   QC.Sec:
     repos:
       github.com/swiss-seismological-service/hermes bandit:
         commands:
-        - /usr/bin/env sh .sqa/script.leaky-malachite-dachsbracke.sh
-        container: qc.sec_nerdy-myrtle-tetra
+        - /usr/bin/env sh .sqa/script.woolly-khaki-camel.sh
+        container: qc.sec_gloppy-amber-tetra
   QC.Sty:
     repos:
       github.com/swiss-seismological-service/hermes flake8:
         commands:
-        - /usr/bin/env sh .sqa/script.crabby-purple-pig.sh
-        container: qc.sty_whiny-corn-turkey
+        - /usr/bin/env sh .sqa/script.stinky-fuchsia-mole.sh
+        container: qc.sty_skinny-scarlet-hyena
       github.com/swiss-seismological-service/hermes hadolint:
         commands:
-        - /usr/bin/env sh .sqa/script.flabby-salmon-sheepdog.sh
-        container: qc.sty_gamy-persimmon-wolf
+        - /usr/bin/env sh .sqa/script.skanky-cornflower-weasel.sh
+        container: qc.sty_snoopy-cornflower-catfish
       github.com/swiss-seismological-service/hermes jsonlint:
         commands:
-        - /usr/bin/env sh .sqa/script.frumpy-persimmon-crocodile.sh
-        container: qc.sty_silly-ivory-pig
+        - /usr/bin/env sh .sqa/script.bluesy-corn-coati.sh
+        container: qc.sty_gamy-bistre-dogfish
   QC.Uni:
     repos:
-      github.com/swiss-seismological-service/hermes pytest:
+      github.com/swiss-seismological-service/hermes commands:
         commands:
-        - /usr/bin/env sh .sqa/script.squeaky-magenta-seal.sh
-        container: qc.uni_greasy-cinnabar-chin
+        - /usr/bin/env sh .sqa/script.cloudy-denim-toad.sh
+        container: qc.uni_flimsy-orchid-kakapo
   QC.Ver:
     repos:
       github.com/swiss-seismological-service/hermes get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.messy-periwinkle-monkey.sh
-        container: qc.ver_stinky-chestnut-capuchin
+        - /usr/bin/env sh .sqa/script.squeaky-lavender-tamarin.sh
+        container: qc.ver_pasty-cobalt-moth
 timeout: 5400

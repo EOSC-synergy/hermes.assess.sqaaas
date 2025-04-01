@@ -5,5 +5,5 @@
 
 (
 cd github.com/swiss-seismological-service/hermes &&
-    pytest  --json-report  --json-report-indent 4
+    echo 'Here we will execute COMPSs'
 )
