@@ -5,5 +5,5 @@
 
 (
 cd github.com/swiss-seismological-service/hermes &&
-    echo "Here we will execute COMPSs"
+    echo 'Here we will execute COMPSs'
 )
