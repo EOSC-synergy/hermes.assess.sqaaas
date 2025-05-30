@@ -4,6 +4,6 @@
 # SPDX-License-Identifier: GPL-3.0-only
 
 (
-cd github.com/swiss-seismological-service/hermes &&
-    hadolint Dockerfile --failure-threshold error
+cd github.com/swiss-seismological-service/hermes/DTC72/WF7202/ST720202/src &&
+    git rev-parse --is-inside-work-tree 
 )

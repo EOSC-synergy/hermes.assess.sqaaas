@@ -4,6 +4,8 @@
 # SPDX-License-Identifier: GPL-3.0-only
 
 (
-cd github.com/swiss-seismological-service/hermes &&
-    find_doc_files.py --file_type all
+cd github.com/swiss-seismological-service/hermes/DTC72/WF7202/ST720202/src &&
+    echo 'This is the first test'&&
+    echo 'This is the first test - second line'&&
+    echo 'This is the first test - third line'
 )

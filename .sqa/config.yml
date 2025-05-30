@@ -7,6 +7,7 @@ config:
     github.com/swiss-seismological-service/hermes:
       branch: v0.2
       repo: https://github.com/swiss-seismological-service/hermes
+      subfolder: DTC72/WF7202/ST720202/src
 environment:
   JPL_DOCKERFORCEBUILD: enabled
   JPL_KEEPGOING: enabled
@@ -15,58 +16,58 @@ sqa_criteria:
     repos:
       github.com/swiss-seismological-service/hermes git:
         commands:
-        - /usr/bin/env sh .sqa/script.crappy-sepia-devil.sh
-        container: qc.acc_whiny-tangerine-fossa
+        - /usr/bin/env sh .sqa/script.wheezy-smalt-fox.sh
+        container: qc.acc_muzzy-vermilion-whippet
   QC.Doc:
     repos:
       github.com/swiss-seismological-service/hermes find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.grumpy-rust-cow.sh
-        container: qc.doc_sloppy-olive-jellyfish
+        - /usr/bin/env sh .sqa/script.goopy-thistle-kangaroo.sh
+        container: qc.doc_clammy-russet-corgi
       github.com/swiss-seismological-service/hermes git:
         commands:
-        - /usr/bin/env sh .sqa/script.squeaky-scarlet-havanese.sh
-        container: qc.doc_ready-heliotrope-sheep
+        - /usr/bin/env sh .sqa/script.dorky-rose-ant.sh
+        container: qc.doc_breezy-auburn-axolotl
       github.com/swiss-seismological-service/hermes markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.grumpy-amethyst-deer.sh
-        container: qc.doc_nerdy-lavender-devil
+        - /usr/bin/env sh .sqa/script.trippy-periwinkle-tiger.sh
+        container: qc.doc_wimpy-cyan-lionfish
   QC.Lic:
     repos:
       github.com/swiss-seismological-service/hermes licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.beady-heliotrope-booby.sh
-        container: qc.lic_frumpy-wheat-russel
+        - /usr/bin/env sh .sqa/script.woolly-goldenrod-chimpanzee.sh
+        container: qc.lic_muzzy-champagne-husky
   QC.Sec:
     repos:
       github.com/swiss-seismological-service/hermes bandit:
         commands:
-        - /usr/bin/env sh .sqa/script.zippy-mustard-quetzal.sh
-        container: qc.sec_bumpy-dandelion-gorilla
+        - /usr/bin/env sh .sqa/script.geeky-burgundy-dormouse.sh
+        container: qc.sec_smelly-denim-falcon
   QC.Sty:
     repos:
       github.com/swiss-seismological-service/hermes flake8:
         commands:
-        - /usr/bin/env sh .sqa/script.flabby-chocolate-leopard.sh
-        container: qc.sty_shabby-smalt-havanese
+        - /usr/bin/env sh .sqa/script.lumpy-lavender-sloth.sh
+        container: qc.sty_grumpy-green-baboon
       github.com/swiss-seismological-service/hermes hadolint:
         commands:
-        - /usr/bin/env sh .sqa/script.nippy-black-bordeaux.sh
-        container: qc.sty_leaky-teal-quail
+        - /usr/bin/env sh .sqa/script.pokey-ecru-spaniel.sh
+        container: qc.sty_blurry-brown-dollar
       github.com/swiss-seismological-service/hermes jsonlint:
         commands:
-        - /usr/bin/env sh .sqa/script.snazzy-olivine-shrimp.sh
-        container: qc.sty_pretty-denim-birman
+        - /usr/bin/env sh .sqa/script.bumpy-thistle-hedgehog.sh
+        container: qc.sty_geeky-seashell-cassowary
   QC.Uni:
     repos:
       github.com/swiss-seismological-service/hermes commands:
         commands:
-        - /usr/bin/env sh .sqa/script.cozy-jade-dunker.sh
-        container: qc.uni_leaky-salmon-reindeer
+        - /usr/bin/env sh .sqa/script.grumpy-lemon-fish.sh
+        container: qc.uni_clammy-chartreuse-penguin
   QC.Ver:
     repos:
       github.com/swiss-seismological-service/hermes get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.tasty-sepia-bobcat.sh
-        container: qc.ver_crabby-bistre-hedgehog
+        - /usr/bin/env sh .sqa/script.messy-xanthic-mayfly.sh
+        container: qc.ver_dorky-white-ferret
 timeout: 5400

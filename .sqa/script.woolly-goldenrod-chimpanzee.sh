@@ -4,6 +4,6 @@
 # SPDX-License-Identifier: GPL-3.0-only
 
 (
-cd github.com/swiss-seismological-service/hermes &&
-    get_git_tags.py
+cd github.com/swiss-seismological-service/hermes/DTC72/WF7202/ST720202/src &&
+    licensee detect . --confidence 60 --json 
 )
